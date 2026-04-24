@@ -1,0 +1,106 @@
+/* Ejercicio 5: Box Model - El reset universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ejercicio 6: Tipografía y Colores Globales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Ejercicio 6: Estilos de Header y Footer */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ejercicio 4 y 9: Estilizando textos y enlaces */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    /* Ejercicio 9: Transición suave */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Ejercicio 9: Estilo de la imagen */
+.profile-img {
+    max-width: 150px;
+    border-radius: 50%; /* Foto circular */
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+/* Ejercicio 5: Clases para secciones (Box Model aplicado) */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Ejercicio 7: Flexbox para la navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* Ejercicio 7: Flexbox opcional para proyectos */
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+    background: #f9f9f9;
+}
+
+/* Ejercicio 8: Responsive Design (Mobile First) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Menú vertical en móviles */
+        gap: 10px;
+    }
+
+    .section {
+        margin: 10px 0;
+    }
+}
