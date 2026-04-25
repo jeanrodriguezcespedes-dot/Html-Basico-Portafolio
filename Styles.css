@@ -62,6 +62,7 @@ a:hover {
     background: white;
     border: 1px solid #ccc;
     border-radius: 8px;
+    text-align: justify;
 }
 
 /* Ejercicio 7: Flexbox para la navegación */
